@@ -1,0 +1,330 @@
+@import 'src/components/variables.sass'
+.blog-niche-container
+    width: 100%
+    margin: 10px
+    display: flex
+    flex-direction: column
+    align-items: center
+    .choose-niche-section
+        display: flex
+        justify-content: space-between
+        margin-top: 10px !important
+        width: 100%
+        flex-wrap: wrap
+        gap: 30px
+        align-items: center
+        .left-section
+            display: flex
+            flex-direction: column
+            gap: 10px
+            .left-section-white-space
+                background-color: #CDE5FE
+                width: 100%
+                border-radius: 5px
+            .left-section-gradient
+                background: linear-gradient(90deg, #F87700 0%, #E32093 48.96%, #9747FF 92.19%)
+                height: 20px
+                border-radius: 5px 5px 5px 5px
+            .add-more
+                color: blue
+                text-decoration: underline
+                font-size: 12px
+        .middle-section
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            gap: 20px
+            .choose-niche-heading
+                display: flex
+                justify-content: center
+                color: black
+                font-size: 24px
+                font-weight: 700
+                letter-spacing: -0.2px
+                text-align: center
+                align-items: center
+            .choose-niche-input
+                padding: 20px
+                width: 344px
+                height: 40px
+                border: 1px solid #D4D4D8
+                border-radius: 12px
+                letter-spacing: -0.2px
+                font-weight: 500
+                font-size: 16px
+        .right-section
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 20%
+            height: 175
+            min-width: 300
+            .reset-btn
+               display: flex
+               gap: 10px
+               align-items: center
+               justify-content: center
+               color: white
+               font-size: 16px
+               font-weight: 500
+               letter-spacing: -0.2px
+               background-color: #F84444
+               box-shadow: 3px 3px 1px 1px $secondary-grey-text
+               border: 1px solid $secondary-grey-text
+               border-radius: 8px
+               padding: 14px 18px
+               width: 140px
+               height: 40px
+               white-space: nowrap
+               cursor: pointer
+               &:hover
+                box-shadow: none
+                border: 2px solid $secondary-grey-text
+            
+    .tab-section
+        display: flex
+        flex-wrap: wrap
+        gap: 10px
+        margin-top: 20px
+        width: 80%
+        .niche-tab-active
+            border: 3px solid #3125E3 !important
+            border-radius: 10px !important
+            background: linear-gradient(90deg, #9747FF 0%, #2C4DF1 100%) !important
+            box-shadow: none !important
+            .tabTitle
+                color: white !important 
+        .tab-section-items
+            display: flex
+            align-items: center
+            box-shadow: 3px 3px 1px 1px $secondary-grey-text
+            border: 1px solid $light-grey-border
+            background: $white-color
+            border-radius: 8px
+            padding: 3px 9px
+            gap: 10px
+            cursor: pointer
+            .tabTitle
+                color: #1B1B1B 
+                font-weight: 500
+                letter-spacing: -0.2px
+                font-size: 15px
+            &:hover
+                box-shadow: none
+                border: 3px solid $primary-button-blue
+    .difficulty-section
+        display: flex
+        flex-direction: column
+        align-items: center
+        flex-wrap: wrap
+        gap: 10px
+        margin-top: 30px
+        .difficulty-title
+            font-size: 24px
+            font-weight: 700
+            color: black
+            letter-spacing: -0.2px
+    .difficulty-tabs
+        display: flex
+        gap: 10px
+        .difficulty-tab-active
+            border: 3px solid #3125E3 !important
+            border-radius: 10px !important
+            background: linear-gradient(90deg, #9747FF 0%, #2C4DF1 100%) !important
+            box-shadow: none !important
+            .tabTitle
+                color: white !important
+        .tab-section-items
+            display: flex
+            align-items: center
+            box-shadow: 3px 3px 1px 1px $secondary-grey-text
+            border: 1px solid $light-grey-border
+            background: $white-color
+            border-radius: 8px
+            padding: 3px 9px
+            gap: 10px
+            cursor: pointer
+            &:hover
+                box-shadow: none
+                border: 3px solid $primary-button-blue
+            .tabTitle
+                color: #1B1B1B 
+                font-weight: 500 
+                font-size: 15px
+    .lower-section
+        display: flex
+        justify-content: space-between 
+        margin-top: 50px
+        gap: 20px
+        flex-wrap: wrap
+        width: 100%
+        .lower-section-title
+            align-items: center
+            display: flex
+            flex-direction: column
+            color: black
+            font-weight: bold
+            font-size: 20px
+            width: 30%
+        .input-container
+            margin-top: 10px
+            width: 100%
+            .inputField
+                padding: 20px
+                width: 100%
+                minWidth: 200px
+                height: 40px
+                border: 1px solid #D4D4D8
+                border-radius: 12px
+                letter-spacing: -0.2px
+                font-weight: 500
+                font-size: 16px
+        .generate-clear-btn
+            display: flex
+            gap: 20px
+            .disabledbutton 
+                cursor: not-allowed
+                pointer-events: none
+                opacity: 0.4
+                font-weight: 700
+                font-size: 16px
+                margin-top: 20px
+                color: white
+                display: flex
+                align-items: center
+                justify-content: center
+                padding: 5px 10px
+                width: 10%
+                min-width: 150px
+                border-radius: 10px
+                gap: 10px
+                white-space: nowrap
+                background: linear-gradient(90deg, #F87700 0%, #E32093 48.96%, #9747FF 92.19%)
+            .generate-btn
+                cursor: pointer
+                font-weight: 500
+                font-size: 15px
+                letter-spacing: -0.2px
+                margin-top: 20px
+                color: white
+                display: flex
+                align-items: center
+                justify-content: center
+                padding: 8px 10px
+                width: 10%
+                min-width: 130px
+                border-radius: 10px
+                gap: 10px
+                white-space: nowrap
+                background: linear-gradient(90deg, #F87700 0%, #E32093 48.96%, #9747FF 92.19%)
+            .clear-btn
+                cursor: pointer
+                font-size: 16px
+                font-weight: 500
+                letter-spacing: -0.2px
+                margin-top: 20px
+                color: black
+                display: flex
+                align-items: center
+                justify-content: center
+                padding: 5px 10px
+                width: 10%
+                min-width: 80px
+                border: 2px solid black
+                border-radius: 10px
+                gap: 10px
+                white-space: nowrap
+                background: transparent
+        .list-components
+            gap: 10px
+            background-color: white 
+            border-radius: 5px
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding: 10px
+            margin-top: 20px
+            width: 100%
+            .list-active
+                border: 3px solid #3125E3 !important
+                border-radius: 10px !important
+                background: linear-gradient(90deg, #9747FF 0%, #2C4DF1 100%) !important
+                color: white 
+                .count-label
+                    background: white !important
+                .list-copy-icon
+                        display: flex !important
+
+            .list-items
+                border: 3px solid White
+                border-radius: 10px               
+                background: White
+                display: flex
+                justify-content: space-between
+                align-items: center
+                width: 90%
+                padding: 5px
+                &:hover
+                    border: 3px solid #3125E3
+                    border-radius: 10px               
+                    background: linear-gradient(90deg, #9747FF 0%, #2C4DF1 100%)
+                    color: white
+                    .count-label
+                        background: white !important 
+                    .list-copy-icon
+                        display: flex !important
+                .list-title                
+                    font-size: 16px
+                    font-weight: 500
+                    letter-spacing: -0.2px
+                .count-container
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    gap: 10px
+                    .count-label
+                        font-size: 12px
+                        background-color: #C2C2C2
+                        border-radius: 5px
+                        width: 22px
+                        height: 22px
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        color: black
+                .list-copy-icon
+                    border: 2px solid #B1B1B7
+                    border-radius: 5px
+                    width: 25px
+                    height: 25px
+                    display: none
+                    align-items: center
+                    justify-content: center
+                .list-copy-text
+                    font-size: 16px
+                    color : black
+                .list-arrow-icon
+                    color: white
+                    white-space: nowrap
+        .create-blog-btn
+            cursor: pointer
+            width: 60%
+            height: 35px
+            background-color: #3032C8
+            border-radius: 50px
+            padding: 5px 8px
+            display: flex
+            align-items: center
+            justify-content: center
+            color: white
+            margin: 20px 0px
+            font-size: 16px
+        .see-more-btn
+            cursor: pointer
+            display: flex
+            align-items: center
+            justify-content: center
+            color: #2C4DF1
+            font-size: 14px
+            margin: 10px 0px

@@ -1,0 +1,603 @@
+@import '../../variables.sass'
+
+.ProseMirror
+  padding: 30px !important
+  ul
+    padding-inline-start: 40px !important
+    list-style: inherit !important
+  ol
+    padding-inline-start: 40px !important
+.k-dropdown
+  background: #ebebeb
+  padding-left: 6px
+  .k-dropdown-wrap
+    border: none
+.k-colorpicker
+  background: #ebebeb
+  padding-left: 6px
+  .k-picker-wrap
+    border: none
+.ProseMirror-selectednode
+  border: 1px solid #0000FF !important
+.k-toolbar
+  z-index: 9
+  position:sticky !important
+  top: 0px
+  gap: 3px
+  padding: 5px
+  background: #fafafa
+  display: flex
+  justify-content: stretch
+
+.k-dropdownlist
+  min-width: 130px
+  justify-content: space-between
+  display: flex
+  align-items: center
+  border: 1px solid rgba(0, 0, 0, 0.08)
+.k-input-inner
+  padding-inline: 8px
+  display: flex;
+  align-items: center;
+.k-list-content
+  overflow: scroll
+  ul li
+    padding: 5px 10px
+.k-editor-content
+  .ProseMirror
+      padding-right: calc((100% - 650px)/2) !important
+      padding-left: calc((100% - 650px)/2) !important
+      letter-spacing: 0.18px !important
+      white-space: unset !important
+  a
+    color: $blue-color !important
+    span,p,h1,h2,h3,h4,h5,h6
+      color: $blue-color !important
+    &:hover
+      color: var(--accent-color) !important
+      text-decoration: underline !important
+      text-decoration-color: var(--accent-color) !important
+      span,p,h1,h2,h3,h4,h5,h6
+        text-decoration: underline !important
+        text-decoration-color: var(--accent-color) !important
+        color: var(--accent-color) !important
+    
+  h1
+    font-size: 2.5em !important
+    margin: .67em 0
+  h2
+    font-size: 2.0em !important
+    margin: .67em 0
+  h3
+    font-size: 1.75em !important
+    margin: .67em 0
+  h4
+    font-size: 1.5em !important
+    margin: .67em 0
+  h5
+    font-size: 1em !important
+    margin: .67em 0
+  h6
+    font-size: 0.75em !important
+  p
+    margin-bottom: 0
+    letter-spacing: 0.18px !important
+    b
+      br
+        &:last-child
+          display: none
+  table
+    border: 1px solid #1B1B1B
+    width: 100%
+    table-layout: fixed
+    td
+      border-bottom: 1px solid #1B1B1B
+      border-right: 1px solid #1B1B1B
+      p
+        color: #000
+  iframe
+    max-width: 100%
+  img
+    max-width: 650px
+    max-height: 650px
+    @media (max-width: $breakpoint-mobile)
+      max-width: 100%
+    color: #000
+  h1,h2,h3,h4,h5,h6
+    span
+      font-size: inherit
+  ul
+    li
+      color : $black-color
+.k-list-optionlabel
+  display: none
+.modal.embed-link-modal .modal-content .modal-body
+  padding: 20px
+.short-code-button
+  padding: 3px 16px;
+
+
+.insert-button-selection
+    width: 100%
+    display: inline-block
+    .modal-btns
+        display: flex
+        max-width: 100%
+        height: 50px
+        justify-content: space-between
+        align-items: center
+        bottom: 0
+        @media (max-width: $breakpoint-ipad)
+            flex-wrap: wrap
+            flex-direction: column
+        .btn-close
+            background: #3032C8
+            border-color: #3032C8
+            color: #ffffff
+            max-width: 150px
+            box-shadow: 0px
+            font-weight: 900;
+            font-size: 14px;
+            border-radius: 32px;
+            text-transform: capitalize;
+            padding: 12px 62px;
+            line-height: 1;
+            &:hover
+                     background-color: #ffffff
+                     border-width: 2px
+                     border-color: #3032C8
+                     color: #3032C8
+        .btn
+            max-width: 175px
+            margin-top: 30px
+            @media (max-width: $breakpoint-ipad)
+                margin-left: 0
+                margin-top: 15px
+
+    .insert-button-template-preview
+        @media (max-width: $breakpoint-mobile)
+            padding-top: 0px
+    .insert-button-template-selection
+        display: inline-block
+        vertical-align: top
+        padding-right: 30px
+        width: 100%
+        @media (max-width: $breakpoint-mobile)
+            padding-right: 0
+        .external-link-box
+            border: 1px solid #ccc
+            padding: 25px
+            border-radius: 12px
+        .left-top-section
+            padding: 0 0px 10px 0px
+            .left-top-section-color-picker-container
+                width : 100%
+                display: flex
+                justify-content: space-between
+                div
+                    width: 130px
+                    display : flex
+                    flex-direction: column
+                    .k-colorpicker
+                        min-width: 100%
+                        width: 100% !important
+                        border-bottom: none !important
+                        padding-left:0px !important
+                        .k-input-inner
+                          padding-inline: 0px !important
+                          .k-color-preview
+                            &::before
+                              width: auto !important
+                              height: auto !important
+                            .k-color-preview-mask
+                              width: 130px !important
+                              height: 30px !important
+                        button
+                          display:none !important
+        .btn-shapes-container
+            margin-top: 10px
+            label
+                font-size: 14px
+            .shape-btn-group
+                display: flex
+                justify-content: space-between
+                button
+                    background-color: transparent
+                    border-color: #C2C2C2
+                    color: $black-color
+                    padding: 12px 30px
+                    @media (max-width: 460px)
+                        padding: 12px 14px
+                        font-size: 12px
+                    &:not(:last-child)
+                        margin-right: 14px
+                    &.Square-btn
+                        border-radius: 0
+                    &.Rounded-btn
+                        border-radius: 8px
+                    &.Round-btn
+                        border-radius: 100px
+                    &.activecls
+                        color: $primary-button-blue
+                        border-color: $primary-button-blue
+                        background-color: $white-color
+
+        .btn-size-container
+            margin-top: 10px
+            label
+                font-size: 14px
+            .size-btn-group
+                display: flex
+                justify-content: space-between
+                padding: 0px 130px 0px 0px
+                button
+                    background-color: transparent
+                    border-color: #C2C2C2
+                    color: $black-color
+                    padding: 12px 30px
+                    @media (max-width: 460px)
+                        padding: 12px 14px
+                        font-size: 12px
+                    &:not(:last-child)
+                        margin-right: 14px
+                    &.Regular-btn
+                    &.Large-btn   
+                     background-color: red                
+                    &.activecls
+                        color: $primary-color
+                        border-color: $primary-color
+                        background-color: $white-color
+                .k-rounded-md 
+                    border-radius: 0px;
+
+    .insert-button-template-preview
+        display: inline-block
+        vertical-align: top
+        .preview-title
+            font-size: 20px
+            color: $black-color
+            text-align: center
+            font-weight: 600
+            margin-bottom: 12px
+        .preview-section
+            width: 100%
+            height: 100px
+            align-items: center
+            display: flex
+            justify-content: center
+            background-color: $white-color
+            border-radius: 30px
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3)
+            .action-name
+                font-size: 40px
+                color: $black-color
+                text-align: center
+                font-weight: 600
+                margin-bottom: 10px
+            .action-tagline
+                font-size: 14px
+                color: $black-color
+                text-align: center
+                font-weight: 500
+                margin-bottom: 10px
+            label
+                margin-left: 10px
+
+.color-picker
+    z-index: 999999 !important
+.modal.embed-link-modal .modal-content .modal-body
+.insert-button-selection
+.templte-section
+     max-width: 50% !important
+
+.modal.embed-link-modal .modal-content .modal-body
+.insert-button-selection
+.preview-container
+     display: flex
+     justify-content: space-between
+     flex-direction: column
+     align-items: center
+     max-width: 50% !important
+     flex: 1 !important
+     .insert-button-template-preview
+       width: 70%
+
+.modal.embed-link-modal .modal-content .modal-body
+.insert-button-selection
+.preview-container
+.btn-shapes-container
+            margin-top: 10px
+            label
+                font-size: 14px
+            .shape-btn-group
+                display: flex
+                justify-content: space-between
+                button
+                    background-color: transparent
+                    border-color: #C2C2C2
+                    color: $black-color
+                    padding: 12px 30px
+                    @media (max-width: 460px)
+                        padding: 12px 14px
+                        font-size: 12px
+                    &:not(:last-child)
+                        margin-right: 14px
+                    &.Square-btn
+                        border-radius: 0
+                    &.Rounded-btn
+                        border-radius: 8px
+                    &.Round-btn
+                        border-radius: 100px
+                    &.activecls
+                        color: $primary-button-blue
+                        border-color: $primary-button-blue
+                        background-color: $white-color
+.btn-size-container
+            margin-top: 10px
+            width: 100%
+            margin-right: 50px
+            label
+                font-size: 14px
+            .size-btn-group
+                display: flex
+                justify-content: space-between
+                align-items: center
+                padding: 0px 130px 0px 0px
+                button
+                    background-color: transparent
+                    border-color: #C2C2C2
+                    color: $black-color
+                    padding: 12px 30px
+                    @media (max-width: 460px)
+                        padding: 12px 14px
+                        font-size: 12px
+                    &:not(:last-child)
+                        margin-right: 14px
+                    &.Regular-btn
+                      padding: 16px
+                      height: 50px
+                    &.Large-btn 
+                      padding: 20px                  
+                    &.activecls
+                        color: $primary-button-blue
+                        border-color: $primary-button-blue
+                        background-color: $white-color
+                .k-rounded-md 
+                    border-radius: 0px;
+       
+.modal.embed-link-modal .modal-content .modal-body
+.insert-button-selection
+.row
+   justify-content: center
+
+.modal
+    &.custom-color-modal
+        &.header-edit-modal
+            .modal-dialog
+                .modal-body
+            .font-color-selector
+              margin-top: 0px !important
+            .mt-3
+              margin-top: 0px !important
+
+.insert-button-selection
+  .modal-btns
+    .btn
+      margin-top : 0px !important
+
+
+.k-edit-field
+  .k-checkbox
+    width : 20px
+    height : 20px
+
+.image-upload-modal
+  .new-modal-header
+  .content-generator-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+  .content-generator-tabs-container
+    display: flex
+    justify-content: center
+    margin-top: 20px
+    .content-generator-tabs
+      display: flex
+      justify-content: space-between
+      border: 1px solid lightgray
+      background: white
+      border-radius: 100px
+      padding: 4px 4px
+      align-items: center
+      gap: 15px
+    .content-tab
+      display: inline-block
+      padding: 4px
+      font-size: 14px
+      font-weight: 500
+      cursor: pointer
+    .active-tab
+      font-size: 14px
+      display: inline-block
+      padding: 5px 10px
+      cursor: pointer
+      border-radius: 20px
+      background: black
+      color: white
+  .blog-post-title-input
+    margin-top: 15px
+    width: 70%
+    outline: none
+    padding: 10px
+    border-radius: 5px
+    align-self: center
+    border: 1px solid lightgray
+  .progress
+    height: 18px !important
+    width: 90% !important
+    margin-top: 20px !important
+    align-self: center !important
+    border-radius: 5px !important
+    margin-bottom: 0px !important
+    .progress-bar
+      height: 18px !important
+      color: white !important
+      justify-content: center !important
+      font-size: 10px !important
+      align-items: center !important
+      background-color: #007bff !important
+      border-radius: 0px !important
+  .form-control
+    width: 70%
+    align-self: center
+    margin-top: 15px
+  .custom-tab-input-prompt
+    margin-top: 20px
+    width: 70%
+    height: 80px
+    align-self: center
+    padding: 5px
+    border: 1px solid lightgray
+  .custom-tab-generate-content-area
+    width: 70%
+    height: 150px
+    align-self: center
+    padding: 5px
+    border: 1px solid lightgray
+    background: white
+    .content-area-btn
+      background: gray
+      border-radius: 5px
+      border: none
+  .outline-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    .outline-tab-content-area
+      width: 70%
+      height: 300px
+      align-self: center
+      padding: 5px
+      border-radius: 5px
+      border: 1px solid lightgray
+    .outline-copy-btn
+      cursor: pointer
+      right: 130px
+      bottom: 105px
+      padding: 2px 10px
+      position: absolute
+      border-radius: 5px
+      color: #000
+      font-size: 14px
+      font-weight: 500
+      background: #DEDEDE
+  .custom-generate-area-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    .custom-generate-area
+      width: 70%
+      height: 200px
+      align-self: center
+      padding: 10px
+      border-radius: 5px
+      border: 1px solid lightgray
+      background: white
+      overflow : auto
+    .custom-copy-btn
+      cursor: pointer
+      right: 130px
+      bottom: 105px
+      padding: 2px 10px
+      position: absolute
+      border-radius: 5px
+      color: #000
+      font-size: 14px
+      font-weight: 500
+      background: #DEDEDE
+      &:hover
+        background: #3032C8
+        color: white
+    h1
+      font-size: 1.2rem
+    h2
+      font-size: 1rem
+      font-weight: 500
+  .content-generator-cancel-confirm-btn
+    border: 2px solid #3032C8
+    border-radius: 50px
+    background: white
+    color: blue
+    width: 120px
+    height: 40px
+    font-weight: bold
+    &:hover
+      background: #3032C8
+      color: white
+  .writing-tone-wrapper
+    display: flex
+    justify-content: center
+    gap: 20px
+    margin: 10px 0px
+    .writing-tone
+      display: flex
+      align-items: center
+      color: black
+      text-align: center
+      letter-spacing: 0.05em
+      font-size: 16px
+      font-weight: 700
+  
+    .writing-tone-tabs
+      display: flex
+      height: 25px
+      gap: 10px
+      .writing-tab-input
+        display: flex
+        padding: 1px 10px
+        border-radius: 5px
+        font-size: 14px
+        width: 100px
+        font-weight: 500
+        border: 2px solid #DEDEDE
+        outline: none
+        color: black
+        align-items: center
+      .writing-tab
+        display: flex
+        padding: 1px 10px
+        cursor: pointer
+        text-align: center
+        border-radius: 5px
+        font-size: 14px
+        font-weight: 500
+        background: #DEDEDE
+        color: black
+        align-items: center
+      .active-writing-tab
+        background: #3032C8
+        color: white
+  .generate-btn-wrapper
+    cursor: pointer
+    display: flex
+    justify-content: center
+    .generate-btn
+      cursor: pointer
+      display: flex
+      width: 150px
+      padding: 9px 20px
+      height: 38px
+      background: linear-gradient(90deg, #F87700 0%, #E32093 48.96%, #9747FF 92.19%)
+      justify-content: center
+      align-items: center
+      color: white
+      border-radius: 50px
+      font-size: 16px
+      font-weight: 700
+      gap: 10px
+  .content-btn-wrapper
+    display: flex
+    justify-content: center
+    padding: 3px 10px
+    margin: 15px
+    gap: 20px
